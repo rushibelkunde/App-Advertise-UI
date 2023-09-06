@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# ReactJS Assignment Readme
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Assignment Overview
 
-## Available Scripts
+## Live Link : https://rushibelkunde.github.io/density-assignment/
 
-In the project directory, you can run:
+This README.md file provides an overview of an assignment I completed using ReactJS, GreenSock (GSAP), and Tailwind CSS. In this assignment, I was tasked with cloning a provided website and incorporating animations. Due to time constraints, I was able to complete approximately some part of the assignment. 
 
-### `npm start`
+## Assignment Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The assignment involved the following technologies and tasks:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **ReactJS**: I used ReactJS as the frontend library for building the user interface and managing the application's components.
 
-### `npm test`
+- **GreenSock (GSAP)**: I integrated GSAP for creating animations within the assignment. While I had to research and learn GSAP during the assignment, I successfully incorporated some animations to enhance the user experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Tailwind CSS**: I utilized Tailwind CSS for styling and layout, ensuring that the cloned website closely resembled the provided design.
 
-### `npm run build`
+## Assignment Progress
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As mentioned earlier, I was able to complete approximately some part of the assignment within the given two-day timeframe. The completed parts of the assignment include:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Cloning and structuring the website's basic layout using React components.
+- Implementing responsive design and styling using Tailwind CSS.
+- Integrating animations using GreenSock (GSAP) to add engaging interactions to the website.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Remaining Work
 
-### `npm run eject`
+Due to time limitations, the following tasks remain unfinished:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Completion of the remaining website sections or pages.
+- Additional animations and interactions to enhance the user experience.
+- Refactoring and optimizing the codebase for performance and maintainability.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage Instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run the completed portion of the assignment:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install the required dependencies using `npm install`.
+4. Start the development server using `npm start`.
+5. Access the application in your web browser at `http://localhost:3000`.
 
-## Learn More
+## Feedback and Improvements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Although I was not able to complete the entire assignment, I welcome feedback and suggestions for improvements. Please feel free to reach out with any recommendations or questions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Thank you for reviewing my ReactJS assignment, and I appreciate your understanding regarding the time constraints.
 
-### Code Splitting
+Happy coding!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**[Rushikesh Belkunde]**
+[rushibelkunde18@gmail.com]
+[https://github.com/rushibelkunde]
