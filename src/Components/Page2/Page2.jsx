@@ -6,9 +6,6 @@ import ScrollTrigger from 'react-scroll-trigger';
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
-
-
-
 gsap.registerPlugin(CSSPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,7 +50,6 @@ function Page2() {
       }, [visible]);
 
      
-
       
 
   
