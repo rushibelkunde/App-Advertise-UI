@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/density-assignment/static/css/main.6e7d6194.css",
-    "main.js": "/density-assignment/static/js/main.d53b31a2.js",
+    "main.css": "/density-assignment/static/css/main.838bb75e.css",
+    "main.js": "/density-assignment/static/js/main.647a9cb8.js",
     "index.html": "/density-assignment/index.html",
-    "main.6e7d6194.css.map": "/density-assignment/static/css/main.6e7d6194.css.map",
-    "main.d53b31a2.js.map": "/density-assignment/static/js/main.d53b31a2.js.map"
+    "main.838bb75e.css.map": "/density-assignment/static/css/main.838bb75e.css.map",
+    "main.647a9cb8.js.map": "/density-assignment/static/js/main.647a9cb8.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e7d6194.css",
-    "static/js/main.d53b31a2.js"
+    "static/css/main.838bb75e.css",
+    "static/js/main.647a9cb8.js"
   ]
 }
