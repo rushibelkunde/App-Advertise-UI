@@ -1,53 +1,72 @@
 import React, { useEffect, useState } from 'react'
 import { gsap, CSSPlugin } from "gsap";
 import { useRef } from 'react'
-import ScrollTrigger from 'react-scroll-trigger';
+// import ScrollTrigger from 'react-scroll-trigger';
 
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
-gsap.registerPlugin(CSSPlugin);
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(CSSPlugin , ScrollTrigger);
+
 
 
 
 function Page2() {
     const title = useRef(null)
-    const [visible , setVisible] = useState(false)
+   
     const containerRef = useRef(null);
-  const wrapperRef = useRef(null);
-  const mask = useRef(null);
- 
+    
+
+    
+
+    
 
 
-    const onEnterViewport = ()=>{
-        setVisible(true)
-    }
-
-    const onExitViewport = ()=>{
-        setVisible(false)
-    }
+    
+    
+    
 
     
 
     useEffect(() => {
-        if (visible) {
-          // Animation using GSAP
-          gsap.to(title.current, {
-            x: 100, // Move the element 100 pixels to the right
-            duration: 1,
-            ease: "power2.inOut",
-          });
-        }
-        else{
-            gsap.to(title.current, {
-                x: -100, // Move the element 100 pixels to the right
-                ease: "power2.inOut",
-              });
-            
-        }
+        var sections = gsap.utils.toArray(".flex-shrink-0")
+
         
-      }, [visible]);
+          // Animation using GSAP
+        //   gsap.fromTo(title.current, {
+        //      // Move the element 100 pixels to the right
+        //     x: -100,
+        //     },{
+        //         x:0,
+        //         duration: 1,
+        //     ease: "power2.inOut",
+        //     scrollTrigger: {
+        //         trigger: title.current,
+        //         toggleActions: "restart pause restart pause"
+
+        //     }
+
+        //     });
+
+          gsap.to(sections, {
+            xPercent : -50*(sections.length - 1),
+            ease: "slow",
+            duration:1,
+            scrollTrigger: {
+                trigger: containerRef.current,
+                start: "top 60%",
+                pin: "true",
+                scrub: 1,
+                snap: 1/(sections.length - 1),
+                // toggleActions: "restart pause reverse pause",
+                // end: ()=> "+=" + document.querySelector(".relative").offsetWidth
+                end: ()=> "+=" + containerRef.current.offsetWidth  
+            }
+    
+          })
+
+          
+      }, []);
 
      
       
@@ -64,11 +83,11 @@ function Page2() {
 
         </div>
         <div className='mt-20'>
-        <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
-            <p className='text-4xl ml-40 font-bold m-auto' ref={title} >Does this sound familiar...</p>
-            </ScrollTrigger>
+        
+            <p className='text-4xl font-bold m-auto' ref={title} >Does this sound familiar...</p>
+            
         </div>
-        <div ref={wrapperRef} className='flex mt-20 gap-2 overflow-y-hidden no-scrollbar'>
+        <div ref={containerRef} className='flex mt-20 gap-2 w-full overflow-x-hidden  flex-nowrap '>
 
             <div className= ' flex-shrink-0 w-72 min h-48 mb-3 bg-blue-300 rounded-3xl flex flex-col justify-around p-4 font-semibold '>
                 <p></p>
@@ -98,17 +117,12 @@ function Page2() {
                     <p><p className=' font-bold'>Lorem ipsum dolor sit.</p>
                     <p className=' text-slate-700'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, officiis!</p>
                     </p>
-                </div> <div className= 'flex-shrink-0 w-72 h-48 mb-3 bg-purple-300 rounded-3xl flex flex-col justify-around p-4 font-semibold '>
-                    <p></p>
-                    <p><p className=' font-bold'>Lorem ipsum dolor sit.</p>
-                    <p className=' text-slate-700'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, officiis!</p>
-                    </p>
-                </div> <div className= ' flex-shrink-0 w-72 h-48 mb-3 bg-purple-300 rounded-3xl flex flex-col justify-around p-4 font-semibold '>
-                    <p></p>
-                    <p><p className=' font-bold'>Lorem ipsum dolor sit.</p>
-                    <p className=' text-slate-700'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, officiis!</p>
-                    </p>
-                </div>
+                </div> 
+               
+               
+              
+                
+                
         </div>
 
         

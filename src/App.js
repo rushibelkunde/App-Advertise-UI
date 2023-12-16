@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import Navbar from './Components/Navbar/Navbar'
 import Page1 from './Components/Page1/Page1'
@@ -9,13 +9,18 @@ import Page4 from './Components/Page4/Page4'
 
 
 function App() {
+
+
+
+  
+
   return (
     <>
-    <Navbar/>
-    <Page1/>
-    <Page2/>
-    <Page3/>
-    <Page4/>
+      <Navbar />
+      <Page1 />
+      <Page2 />
+      <Page3 />
+      <Page4 />
     </>
   )
 }

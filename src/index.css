@@ -16,3 +16,20 @@
       }
     }
   }
+
+
+  /* html {
+    overflow-y: scroll;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+  body {
+    overflow-y: visible;
+    position: relative;
+    height: unset;
+  }
+  html, body {
+    overflow-x: hidden;
+    margin: 0;
+  }
+   */
